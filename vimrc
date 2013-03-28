@@ -15,6 +15,7 @@
   Bundle 'tpope/vim-rails.git'
   Bundle 'scrooloose/nerdtree'
   Bundle 'kchmck/vim-coffee-script'
+  Bundle 'wikitopian/hardmode'
   " vim-scripts repos
   Bundle 'L9'
   Bundle 'FuzzyFinder'
@@ -80,6 +81,9 @@
   set ai sw=2 sts=2 et
  
   "set omnifunc=csscomplete#CompleteCSS 
+  
+  " enable hard mode
+  autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
   set gfn=DejaVu\ Sans\ Mono:h12
 
