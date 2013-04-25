@@ -16,6 +16,7 @@
   Bundle 'scrooloose/nerdtree'
   Bundle 'kchmck/vim-coffee-script'
   Bundle 'wikitopian/hardmode'
+  Bundle 'briancollins/vim-jst'
   " vim-scripts repos
   Bundle 'L9'
   Bundle 'FuzzyFinder'
