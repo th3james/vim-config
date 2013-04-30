@@ -15,7 +15,6 @@
   Bundle 'tpope/vim-rails.git'
   Bundle 'scrooloose/nerdtree'
   Bundle 'kchmck/vim-coffee-script'
-  Bundle 'wikitopian/hardmode'
   Bundle 'briancollins/vim-jst'
   Bundle 'nono/vim-handlebars'
   " vim-scripts repos
