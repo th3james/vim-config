@@ -17,6 +17,7 @@
   Bundle 'kchmck/vim-coffee-script'
   Bundle 'briancollins/vim-jst'
   Bundle 'nono/vim-handlebars'
+  Bundle 'ervandew/supertab.git'
   " vim-scripts repos
   Bundle 'L9'
   Bundle 'FuzzyFinder'
