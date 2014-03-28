@@ -10,6 +10,7 @@ Before running this, you should install:
   
   * Vim (not vi)
   * Oh my ZSH
+  * tmux
 
 # Setup
 * Clone the repo into .sys-config:

@@ -5,3 +5,5 @@ ln -s ~/.sys-config/zshrc ~/.zshrc
 
 ln -s ~/.sys-config/gitignore ~/.gitignore
 git config --global core.excludesfile ~/.gitignore
+
+ln -s ~/.sys-config/tmux.config ~/.tmux.config
