@@ -70,11 +70,7 @@ export EDITOR='vim'
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-if [ -e /usr/share/terminfo/x/xterm-256color ]; then
-  export TERM='xterm-256color'
-else
-  export TERM='xterm-color'
-fi
+export TERM='xterm-256color'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
