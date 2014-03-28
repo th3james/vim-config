@@ -1,0 +1,2 @@
+ln -s ~/.sys-config/vim/ ~/.vim
+ln -s ~/.sys-config/vim/vimrc ~/.vimrc
