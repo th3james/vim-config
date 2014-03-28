@@ -20,9 +20,8 @@
   Bundle 'ervandew/supertab.git'
   " vim-scripts repos
   Bundle 'L9'
-  Bundle 'FuzzyFinder'
   " non github repos
-  "Bundle 'git://git.wincent.com/command-t.git'
+  Bundle 'git://github.com/wikitopian/hardmode.git'
   " ...
 
   filetype plugin indent on     " required!
