@@ -5,6 +5,12 @@ My config setup for my developer tools. Each dir contains
 contains config for a tool, which you must symlink to the correct
 dir using the ./symlink command
 
+# Pre-requisites
+Before running this, you should install:
+  
+  * Vim (not vi)
+  * Oh my ZSH
+
 # Setup
 * Clone the repo into .sys-config:
 

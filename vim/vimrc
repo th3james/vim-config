@@ -59,7 +59,7 @@
   set foldenable                        " auto fold code
   set gdefault                          " the /g flag on :s substitutions by default
 
-  set spell                 " spell checking on
+  "set spell                 " spell checking on
   set undofile              " Persistent undo (across files)
   
 
@@ -85,6 +85,4 @@
   
   " enable hard mode
   autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
-
-  set gfn=DejaVu\ Sans\ Mono:h12
 
