@@ -18,6 +18,10 @@
   Bundle 'briancollins/vim-jst'
   Bundle 'nono/vim-handlebars'
   Bundle 'ervandew/supertab.git'
+
+  Bundle 'plasticboy/vim-markdown'
+  let g:vim_markdown_folding_disabled=1
+
   " vim-scripts repos
   Bundle 'L9'
   " non github repos
