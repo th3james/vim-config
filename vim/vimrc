@@ -18,6 +18,7 @@
   Bundle 'briancollins/vim-jst'
   Bundle 'nono/vim-handlebars'
   Bundle 'ervandew/supertab.git'
+  Bundle 'thoughtbot/vim-rspec'
 
   Bundle 'plasticboy/vim-markdown'
   let g:vim_markdown_folding_disabled=1
@@ -88,5 +89,14 @@
   "set omnifunc=csscomplete#CompleteCSS 
   
   " enable hard mode
-  autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+  "autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
+  " RSpec Vim settings
+  map <Leader>t :call RunCurrentSpecFile()<CR>
+  map <Leader>s :call RunNearestSpec()<CR>
+  map <Leader>l :call RunLastSpec()<CR>
+  map <Leader>a :call RunAllSpecs()<CR>
+
+  let g:rspec_runner = "os_x_iterm"
+  let g:rspec_command = "spring rspec {spec}"
+  
