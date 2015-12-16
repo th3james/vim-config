@@ -92,6 +92,10 @@
   " enable hard mode
   "autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
+  " CtrlPTag on .
+  nnoremap <leader>. :CtrlPTag<CR>
+  nnoremap <leader>/ :!ctags -R
+
   " RSpec Vim settings
   map <Leader>t :call RunCurrentSpecFile()<CR>
   map <Leader>s :call RunNearestSpec()<CR>
