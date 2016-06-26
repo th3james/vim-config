@@ -105,3 +105,6 @@
   let g:rspec_runner = "os_x_iterm2"
   let g:rspec_command = "spring rspec {spec}"
   
+  " Make shortcut
+  nnoremap <Leader>r :!run_iterm_macvim make<CR>
+  nnoremap <Leader>u :!run_iterm_macvim 'make test'<CR>

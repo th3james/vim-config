@@ -7,3 +7,5 @@ ln -s ~/.sys-config/gitignore ~/.gitignore
 git config --global core.excludesfile ~/.gitignore
 
 ln -s ~/.sys-config/tmux.conf ~/.tmux.conf
+
+ln -s ~/.sys-config/run_iterm_macvim /usr/local/bin/run_iterm_macvim
