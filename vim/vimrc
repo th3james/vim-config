@@ -86,6 +86,9 @@
   set expandtab
 
   set ai sw=2 sts=2 et
+
+  " Force windows to eb 80 char wide
+  set winwidth=80
  
   "set omnifunc=csscomplete#CompleteCSS 
   
