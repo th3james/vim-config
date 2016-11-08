@@ -2,12 +2,12 @@
   set nocompatible          " We're running Vim, not Vi!
   filetype off                   " required!
 
-  set rtp+=~/.vim/bundle/vundle/
-  call vundle#rc()
+  set rtp+=~/.vim/bundle/Vundle.vim/
+  call vundle#begin()
 
   " let Vundle manage Vundle
   " required! 
-  Bundle 'gmarik/vundle'
+  Plugin 'VundleVim/Vundle.vim'
 
   " My Bundles here:
   "
@@ -21,6 +21,7 @@
   Bundle 'kien/ctrlp.vim.git'
   Bundle 'thoughtbot/vim-rspec'
   Bundle 'rust-lang/rust.vim'
+  Bundle 'keith/swift.vim'
 
   Bundle 'plasticboy/vim-markdown'
   let g:vim_markdown_folding_disabled=1
@@ -30,6 +31,8 @@
   " non github repos
   Bundle 'git://github.com/wikitopian/hardmode.git'
   " ...
+
+  call vundle#end()
 
   filetype plugin indent on     " required!
   "
@@ -94,7 +97,7 @@
   "set omnifunc=csscomplete#CompleteCSS 
   
   " enable hard mode
-  "autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+  autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
   " CtrlPTag on .
   nnoremap <leader>. :CtrlPTag<CR>
@@ -112,3 +115,6 @@
   " Make shortcut
   nnoremap <Leader>r :!run_iterm_macvim make<CR>
   nnoremap <Leader>u :!run_iterm_macvim 'make test'<CR>
+
+  " jk instead of esc
+  imap jk <Esc>
