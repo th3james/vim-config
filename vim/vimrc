@@ -92,8 +92,9 @@
 
   set ai sw=2 sts=2 et
 
-  " Force windows to eb 80 char wide
-  set winwidth=80
+  " Force windows to be 80 char wide
+  set numberwidth=4
+  set winwidth=84
  
   "set omnifunc=csscomplete#CompleteCSS 
   
@@ -119,3 +120,6 @@
 
   " jk instead of esc
   imap jk <Esc>
+  "
+  " Toggle HardMode
+  map <Leader>e :call EasyMode()<CR>

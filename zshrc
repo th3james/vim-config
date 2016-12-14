@@ -75,6 +75,3 @@ export TERM='xterm-256color'
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Load rbenv autocomplete
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
