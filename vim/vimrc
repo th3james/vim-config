@@ -16,12 +16,13 @@
   Bundle 'scrooloose/nerdtree'
   Bundle 'kchmck/vim-coffee-script'
   Bundle 'briancollins/vim-jst'
-  Bundle 'nono/vim-handlebars'
   Bundle 'ervandew/supertab.git'
   Bundle 'kien/ctrlp.vim.git'
   Bundle 'thoughtbot/vim-rspec'
   Bundle 'rust-lang/rust.vim'
   Bundle 'keith/swift.vim'
+  Bundle 'yodiaditya/vim-pydjango.git'
+  Bundle 'nvie/vim-flake8'
 
   Bundle 'plasticboy/vim-markdown'
   let g:vim_markdown_folding_disabled=1
