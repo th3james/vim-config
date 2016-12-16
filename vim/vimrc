@@ -18,11 +18,12 @@
   Bundle 'briancollins/vim-jst'
   Bundle 'ervandew/supertab.git'
   Bundle 'kien/ctrlp.vim.git'
-  Bundle 'thoughtbot/vim-rspec'
+  "Bundle 'thoughtbot/vim-rspec'
   Bundle 'rust-lang/rust.vim'
   Bundle 'keith/swift.vim'
   Bundle 'yodiaditya/vim-pydjango.git'
   Bundle 'nvie/vim-flake8'
+  Bundle 'janko-m/vim-test'
 
   Bundle 'plasticboy/vim-markdown'
   let g:vim_markdown_folding_disabled=1
@@ -105,15 +106,25 @@
   nnoremap <leader>. :CtrlPTag<CR>
   nnoremap <leader>/ :!ctags -R
 
-  " RSpec Vim settings
-  map <Leader>t :call RunCurrentSpecFile()<CR>
-  map <Leader>s :call RunNearestSpec()<CR>
-  map <Leader>l :call RunLastSpec()<CR>
-  map <Leader>a :call RunAllSpecs()<CR>
+  " vim-test setup
+  nmap <silent> <leader>t :TestNearest<CR>
+  nmap <silent> <leader>T :TestFile<CR>
+  nmap <silent> <leader>a :TestSuite<CR>
+  nmap <silent> <leader>l :TestLast<CR>
+  nmap <silent> <leader>g :TestVisit<CR>
 
-  let g:rspec_runner = "os_x_iterm2"
-  let g:rspec_command = "spring rspec {spec}"
-  
+  let test#strategy = "iterm"
+
+  " Example docker transform
+  "function! DockerTransform(cmd) abort
+  "  return 'docker-compose run app '.a:cmd
+  "endfunction
+
+  "let g:test#custom_transformations = {'docker': function('DockerTransform')}
+  "let g:test#transformation = 'docker'
+
+  "let test#python#runner = 'pytest'
+
   " Make shortcut
   nnoremap <Leader>r :!run_iterm_macvim make<CR>
   nnoremap <Leader>u :!run_iterm_macvim 'make test'<CR>
@@ -123,3 +134,8 @@
   "
   " Toggle HardMode
   map <Leader>e :call EasyMode()<CR>
+
+  " load project specific .vimrc files
+  set exrc
+  " This prevents project specific .vimrc files doing anything dangerous
+  set secure
