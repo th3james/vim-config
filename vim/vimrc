@@ -147,7 +147,7 @@
 
   " jk instead of esc
   imap jk <Esc>
-  "
+
   " Toggle HardMode
   "map <Leader>e :call EasyMode()<CR>
 

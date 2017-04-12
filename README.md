@@ -11,6 +11,7 @@ Before running this, you should install:
   * Vim (not vi)
   * Oh my ZSH
   * tmux
+    * reattach-to-user-namespace (for tmux copy and paste, in homebrew)
 
 # Setup
 * Clone the repo into .sys-config:
