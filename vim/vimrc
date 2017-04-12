@@ -20,10 +20,12 @@
   Bundle 'kien/ctrlp.vim.git'
   "Bundle 'thoughtbot/vim-rspec'
   Bundle 'rust-lang/rust.vim'
-  Bundle 'keith/swift.vim'
+  "Bundle 'keith/swift.vim'
   Bundle 'yodiaditya/vim-pydjango.git'
   Bundle 'nvie/vim-flake8'
   Bundle 'janko-m/vim-test'
+  Bundle 'Shutnik/jshint2.vim'
+  Bundle 'benmills/vimux'
 
   Bundle 'plasticboy/vim-markdown'
   let g:vim_markdown_folding_disabled=1
@@ -31,7 +33,7 @@
   " vim-scripts repos
   Bundle 'L9'
   " non github repos
-  Bundle 'git://github.com/wikitopian/hardmode.git'
+  "Bundle 'git://github.com/wikitopian/hardmode.git'
   " ...
 
   call vundle#end()
@@ -103,8 +105,8 @@
   "autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
   " CtrlPTag on .
-  nnoremap <leader>. :CtrlPTag<CR>
-  nnoremap <leader>/ :!ctags -R
+  "nnoremap <leader>. :CtrlPTag<CR>
+  "nnoremap <leader>/ :!ctags -R
 
   " The Silver Searcher
   if executable('ag')
@@ -127,7 +129,7 @@
   nmap <silent> <leader>l :TestLast<CR>
   nmap <silent> <leader>g :TestVisit<CR>
 
-  let test#strategy = "iterm"
+  let test#strategy = "vimux"
 
   " Example docker transform
   "function! DockerTransform(cmd) abort
@@ -140,14 +142,17 @@
   "let test#python#runner = 'pytest'
 
   " Make shortcut
-  nnoremap <Leader>r :!run_iterm_macvim make<CR>
-  nnoremap <Leader>u :!run_iterm_macvim 'make test'<CR>
+  nnoremap <Leader>r :VimuxRunCommand('make')<CR>
+  nnoremap <Leader>u :VimuxRunCommand('make test')<CR>
 
   " jk instead of esc
   imap jk <Esc>
   "
   " Toggle HardMode
-  map <Leader>e :call EasyMode()<CR>
+  "map <Leader>e :call EasyMode()<CR>
+
+  " Make shortcut
+  nnoremap <silent><F6> :JSHint<CR>
 
   " load project specific .vimrc files
   set exrc

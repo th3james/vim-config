@@ -11,6 +11,7 @@ ZSH_THEME="robbyrussell"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dc="docker-compose"
+alias tmux="TERM=xterm-256color tmux"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
