@@ -11,7 +11,7 @@ ZSH_THEME="robbyrussell"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dc="docker-compose"
-alias tmux="TERM=xterm-256color tmux"
+alias tmux="TERM=screen-256color tmux"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -72,7 +72,10 @@ export EDITOR='vim'
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# zsh expects xterm 256color
 export TERM='xterm-256color'
+# ... but in tmux, we want screen
+[ -n "$TMUX" ] && export TERM=screen-256color
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
