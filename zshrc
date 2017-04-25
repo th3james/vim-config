@@ -72,10 +72,5 @@ export EDITOR='vim'
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# zsh expects xterm 256color
-export TERM='xterm-256color'
-# ... but in tmux, we want screen
-[ -n "$TMUX" ] && export TERM=screen-256color
-
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
