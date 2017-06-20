@@ -53,8 +53,8 @@
   set t_Co=256
 
   syntax on                 " Enable syntax highlighting
+  color default
   set background=dark       " Assume a dark background
-  color ir_black
 
   set backspace=indent,eol,start	" backspace for dummys
   set linespace=0		        " No extra spaces between rows
