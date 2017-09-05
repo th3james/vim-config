@@ -3,6 +3,7 @@
 *.swo
 *.swn
 *.un~
+vim/plugged
 
 # OS X
 .DS_Store

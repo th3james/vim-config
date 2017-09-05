@@ -2,41 +2,33 @@
   set nocompatible          " We're running Vim, not Vi!
   filetype off                   " required!
 
-  set rtp+=~/.vim/bundle/Vundle.vim/
-  call vundle#begin()
+  call plug#begin('~/.vim/plugged')
 
-  " let Vundle manage Vundle
-  " required! 
-  Plugin 'VundleVim/Vundle.vim'
+  Plug 'tpope/vim-rails'
+  Plug 'scrooloose/nerdtree'
+  Plug 'kchmck/vim-coffee-script'
+  Plug 'briancollins/vim-jst'
+  Plug 'ervandew/supertab'
+  Plug 'kien/ctrlp.vim'
+  "Plug 'thoughtbot/vim-rspec'
+  Plug 'rust-lang/rust.vim'
+  "Plug 'keith/swift.vim'
+  Plug 'yodiaditya/vim-pydjango'
+  Plug 'nvie/vim-flake8'
+  Plug 'janko-m/vim-test'
+  Plug 'Shutnik/jshint2.vim'
+  Plug 'benmills/vimux'
+  Plug 'tpope/vim-fugitive'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'tpope/vim-rhubarb'
+  Plug 'plasticboy/vim-markdown'
 
-  " My Bundles here:
-  "
-  " original repos on github
-  Bundle 'tpope/vim-rails.git'
-  Bundle 'scrooloose/nerdtree'
-  Bundle 'kchmck/vim-coffee-script'
-  Bundle 'briancollins/vim-jst'
-  Bundle 'ervandew/supertab.git'
-  Bundle 'kien/ctrlp.vim.git'
-  "Bundle 'thoughtbot/vim-rspec'
-  Bundle 'rust-lang/rust.vim'
-  "Bundle 'keith/swift.vim'
-  Bundle 'yodiaditya/vim-pydjango.git'
-  Bundle 'nvie/vim-flake8'
-  Bundle 'janko-m/vim-test'
-  Bundle 'Shutnik/jshint2.vim'
-  Bundle 'benmills/vimux'
-
-  Bundle 'plasticboy/vim-markdown'
   let g:vim_markdown_folding_disabled=1
 
   " vim-scripts repos
-  Bundle 'L9'
-  " non github repos
-  "Bundle 'git://github.com/wikitopian/hardmode.git'
-  " ...
+  Plug 'vim-scripts/L9'
 
-  call vundle#end()
+  call plug#end()
 
   filetype plugin indent on     " required!
   "
