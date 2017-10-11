@@ -1,4 +1,5 @@
 alias dc "docker-compose"
+alias vi "vim"
 alias tmux "env TERM=screen-256color tmux"
 
 # Git #
