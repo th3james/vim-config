@@ -9,7 +9,8 @@
   Plug 'kchmck/vim-coffee-script'
   Plug 'briancollins/vim-jst'
   Plug 'ervandew/supertab'
-  Plug 'kien/ctrlp.vim'
+  "Plug 'kien/ctrlp.vim'
+  Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
   "Plug 'thoughtbot/vim-rspec'
   Plug 'rust-lang/rust.vim'
   "Plug 'keith/swift.vim'
@@ -100,19 +101,24 @@
   " CtrlPTag on .
   "nnoremap <leader>. :CtrlPTag<CR>
   "nnoremap <leader>/ :!ctags -R
+  
+  nnoremap <C-p> :Files<CR>
+
+  let g:fzf_layout = { 'down': '~40%' }
+  
 
   " The Silver Searcher
   if executable('ag')
-    " Use ag over grep
     set grepprg=ag\ --nogroup\ --nocolor
 
-    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+    " Old CtrlP fuzzy search setup
+    " " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+    " let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
-    " ag is fast enough that CtrlP doesn't need to cache
-    let g:ctrlp_use_caching = 0
+    " " ag is fast enough that CtrlP doesn't need to cache
+    " let g:ctrlp_use_caching = 0
 
-    command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+    " command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
   endif
 
   " vim-test setup
