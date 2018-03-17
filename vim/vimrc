@@ -17,13 +17,13 @@ Plug 'rust-lang/rust.vim'
 Plug 'yodiaditya/vim-pydjango'
 Plug 'nvie/vim-flake8'
 Plug 'janko-m/vim-test'
-Plug 'Shutnik/jshint2.vim'
 Plug 'benmills/vimux'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-rhubarb'
 Plug 'plasticboy/vim-markdown'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'vim-syntastic/syntastic'
 
 let g:vim_markdown_folding_disabled=1
 
@@ -150,8 +150,17 @@ imap jk <Esc>
 " Toggle HardMode
 "map <Leader>e :call EasyMode()<CR>
 
-" Make shortcut
-nnoremap <silent><F6> :JSHint<CR>
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_python_checkers = ['flake8']
 
 " load project specific .vimrc files
 set exrc
