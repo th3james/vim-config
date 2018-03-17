@@ -6,7 +6,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-rails'
 Plug 'scrooloose/nerdtree'
-Plug 'kchmck/vim-coffee-script'
+"Plug 'kchmck/vim-coffee-script'
 Plug 'briancollins/vim-jst'
 Plug 'ervandew/supertab'
 "Plug 'kien/ctrlp.vim'
