@@ -1,159 +1,159 @@
-  " Somewhat copied from https://github.com/spf13/spf13-vim/blob/master/.vimrc
-  set nocompatible          " We're running Vim, not Vi!
-  filetype off                   " required!
+" Somewhat copied from https://github.com/spf13/spf13-vim/blob/master/.vimrc
+set nocompatible          " We're running Vim, not Vi!
+filetype off                   " required!
 
-  call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/plugged')
 
-  Plug 'tpope/vim-rails'
-  Plug 'scrooloose/nerdtree'
-  Plug 'kchmck/vim-coffee-script'
-  Plug 'briancollins/vim-jst'
-  Plug 'ervandew/supertab'
-  "Plug 'kien/ctrlp.vim'
-  Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
-  "Plug 'thoughtbot/vim-rspec'
-  Plug 'rust-lang/rust.vim'
-  "Plug 'keith/swift.vim'
-  Plug 'yodiaditya/vim-pydjango'
-  Plug 'nvie/vim-flake8'
-  Plug 'janko-m/vim-test'
-  Plug 'Shutnik/jshint2.vim'
-  Plug 'benmills/vimux'
-  Plug 'tpope/vim-fugitive'
-  Plug 'airblade/vim-gitgutter'
-  Plug 'tpope/vim-rhubarb'
-  Plug 'plasticboy/vim-markdown'
-  Plug 'christoomey/vim-tmux-navigator'
+Plug 'tpope/vim-rails'
+Plug 'scrooloose/nerdtree'
+Plug 'kchmck/vim-coffee-script'
+Plug 'briancollins/vim-jst'
+Plug 'ervandew/supertab'
+"Plug 'kien/ctrlp.vim'
+Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+"Plug 'thoughtbot/vim-rspec'
+Plug 'rust-lang/rust.vim'
+"Plug 'keith/swift.vim'
+Plug 'yodiaditya/vim-pydjango'
+Plug 'nvie/vim-flake8'
+Plug 'janko-m/vim-test'
+Plug 'Shutnik/jshint2.vim'
+Plug 'benmills/vimux'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-rhubarb'
+Plug 'plasticboy/vim-markdown'
+Plug 'christoomey/vim-tmux-navigator'
 
-  let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_folding_disabled=1
 
-  " vim-scripts repos
-  Plug 'vim-scripts/L9'
+" vim-scripts repos
+Plug 'vim-scripts/L9'
 
-  call plug#end()
+call plug#end()
 
-  filetype plugin indent on     " required!
-  "
-  " Brief help
-  " :BundleList          - list configured bundles
-  " :BundleInstall(!)    - install(update) bundles
-  " :BundleSearch(!) foo - search(or refresh cache first) for foo
-  " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-  "
-  " see :h vundle for more details or wiki for FAQ
-  " NOTE: comments after Bundle command are not allowed..
+filetype plugin indent on     " required!
+"
+" Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle command are not allowed..
 
-  " UI stuff
-  set t_Co=256
+" UI stuff
+set t_Co=256
 
-  syntax on                 " Enable syntax highlighting
-  color default
-  set background=dark       " Assume a dark background
+syntax on                 " Enable syntax highlighting
+color default
+set background=dark       " Assume a dark background
 
-  set backspace=indent,eol,start	" backspace for dummys
-  set linespace=0		        " No extra spaces between rows
-  set nu                                " Line numbers on
-  set showmatch                         " show matching brackets/parenthesis
-  set incsearch	                        " find as you type search
-  set hlsearch	                        " highlight search terms
-  set winminheight=0                    " windows can be 0 line high 
-  set ignorecase			" case insensitive search
-  set smartcase                         " case sensitive when uc present
-  set wildmenu                          " show list instead of just completing
-  set wildmode=list:longest,full        " command <Tab> completion, list matches, then longest common part, then all.
-  set whichwrap=b,s,h,l,<,>,[,]	        " backspace and cursor keys wrap to
-  set scrolljump=5                      " lines to scroll when cursor leaves screen
-  set scrolloff=3                       " minimum lines to keep above and below cursor
-  set foldenable                        " auto fold code
-  set gdefault                          " the /g flag on :s substitutions by default
+set backspace=indent,eol,start	" backspace for dummys
+set linespace=0		        " No extra spaces between rows
+set nu                                " Line numbers on
+set showmatch                         " show matching brackets/parenthesis
+set incsearch	                        " find as you type search
+set hlsearch	                        " highlight search terms
+set winminheight=0                    " windows can be 0 line high 
+set ignorecase			" case insensitive search
+set smartcase                         " case sensitive when uc present
+set wildmenu                          " show list instead of just completing
+set wildmode=list:longest,full        " command <Tab> completion, list matches, then longest common part, then all.
+set whichwrap=b,s,h,l,<,>,[,]	        " backspace and cursor keys wrap to
+set scrolljump=5                      " lines to scroll when cursor leaves screen
+set scrolloff=3                       " minimum lines to keep above and below cursor
+set foldenable                        " auto fold code
+set gdefault                          " the /g flag on :s substitutions by default
 
-  "set spell                 " spell checking on
-  set undofile              " Persistent undo (across files)
-  
+"set spell                 " spell checking on
+set undofile              " Persistent undo (across files)
 
-  " Load matchit (% to bounce from do to end, etc.)
-  runtime! macros/matchit.vim
 
-  augroup myfiletypes
-    " Clear old autocmds in group
-    autocmd!
-    " autoindent with two spaces, always expand tabs
-    autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
-  augroup END
+" Load matchit (% to bounce from do to end, etc.)
+runtime! macros/matchit.vim
 
-  set hidden " allow hiding buffers with changes
+augroup myfiletypes
+  " Clear old autocmds in group
+  autocmd!
+  " autoindent with two spaces, always expand tabs
+  autocmd FileType ruby,eruby,yaml set ai sw=2 sts=2 et
+augroup END
 
-  set autoindent
-  set smarttab
-  set expandtab
+set hidden " allow hiding buffers with changes
 
-  set ai sw=2 sts=2 et
+set autoindent
+set smarttab
+set expandtab
 
-  " Force windows to be 80 char wide
-  set numberwidth=4
-  set winwidth=84
- 
-  "set omnifunc=csscomplete#CompleteCSS 
-  
-  " enable hard mode
-  "autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+set ai sw=2 sts=2 et
 
-  " CtrlPTag on .
-  "nnoremap <leader>. :CtrlPTag<CR>
-  "nnoremap <leader>/ :!ctags -R
-  
-  nnoremap <C-p> :Files<CR>
+" Force windows to be 80 char wide
+set numberwidth=4
+set winwidth=84
 
-  let g:fzf_layout = { 'down': '~40%' }
-  
+"set omnifunc=csscomplete#CompleteCSS 
 
-  " The Silver Searcher
-  if executable('ag')
-    set grepprg=ag\ --nogroup\ --nocolor
+" enable hard mode
+"autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
-    " Old CtrlP fuzzy search setup
-    " " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-    " let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+" CtrlPTag on .
+"nnoremap <leader>. :CtrlPTag<CR>
+"nnoremap <leader>/ :!ctags -R
 
-    " " ag is fast enough that CtrlP doesn't need to cache
-    " let g:ctrlp_use_caching = 0
+nnoremap <C-p> :Files<CR>
 
-    " command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
-  endif
+let g:fzf_layout = { 'down': '~40%' }
 
-  " vim-test setup
-  nmap <silent> <leader>t :TestNearest<CR>
-  nmap <silent> <leader>T :TestFile<CR>
-  nmap <silent> <leader>a :TestSuite<CR>
-  nmap <silent> <leader>l :TestLast<CR>
-  nmap <silent> <leader>g :TestVisit<CR>
 
-  let test#strategy = "vimux"
+" The Silver Searcher
+if executable('ag')
+  set grepprg=ag\ --nogroup\ --nocolor
 
-  " Example docker transform
-  "function! DockerTransform(cmd) abort
-  "  return 'docker-compose run app '.a:cmd
-  "endfunction
+  " Old CtrlP fuzzy search setup
+  " " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  " let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
-  "let g:test#custom_transformations = {'docker': function('DockerTransform')}
-  "let g:test#transformation = 'docker'
+  " " ag is fast enough that CtrlP doesn't need to cache
+  " let g:ctrlp_use_caching = 0
 
-  "let test#python#runner = 'pytest'
+  " command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+endif
 
-  " Make shortcut
-  nnoremap <Leader>r :VimuxRunCommand('make')<CR>
-  nnoremap <Leader>u :VimuxRunCommand('make test')<CR>
+" vim-test setup
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
 
-  " jk instead of esc
-  imap jk <Esc>
+let test#strategy = "vimux"
 
-  " Toggle HardMode
-  "map <Leader>e :call EasyMode()<CR>
+" Example docker transform
+"function! DockerTransform(cmd) abort
+"  return 'docker-compose run app '.a:cmd
+"endfunction
 
-  " Make shortcut
-  nnoremap <silent><F6> :JSHint<CR>
+"let g:test#custom_transformations = {'docker': function('DockerTransform')}
+"let g:test#transformation = 'docker'
 
-  " load project specific .vimrc files
-  set exrc
-  " This prevents project specific .vimrc files doing anything dangerous
-  set secure
+"let test#python#runner = 'pytest'
+
+" Make shortcut
+nnoremap <Leader>r :VimuxRunCommand('make')<CR>
+nnoremap <Leader>u :VimuxRunCommand('make test')<CR>
+
+" jk instead of esc
+imap jk <Esc>
+
+" Toggle HardMode
+"map <Leader>e :call EasyMode()<CR>
+
+" Make shortcut
+nnoremap <silent><F6> :JSHint<CR>
+
+" load project specific .vimrc files
+set exrc
+" This prevents project specific .vimrc files doing anything dangerous
+set secure
