@@ -25,6 +25,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'vim-syntastic/syntastic'
 Plug 'fatih/vim-go'
+Plug 'hashivim/vim-terraform'
 
 let g:vim_markdown_folding_disabled=1
 
