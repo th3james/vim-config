@@ -1,5 +1,4 @@
 vim/bundle/
 vim/plugged/
 .config/configstore/
-.config/nvim
 .config/omf/

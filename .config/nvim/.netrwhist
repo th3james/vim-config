@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/jamcox01/.sys-config'
+let g:netrw_dirhist_2='/Users/jamcox01/src/mbed-compiler'
+let g:netrw_dirhist_3='/Users/jamcox01/src/mbed-compiler/mbed/services/exports/tests'
+let g:netrw_dirhist_4='/Users/jamcox01/src/mbed-compiler'
+let g:netrw_dirhist_5='/Users/jamcox01/.sys-config/.config'
+let g:netrw_dirhist_6='/Users/jamcox01/.sys-config'
+let g:netrw_dirhist_7='/Users/jamcox01'
+let g:netrw_dirhist_8='/Users/jamcox01/.sys-config/.config'
