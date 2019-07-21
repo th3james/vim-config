@@ -1,3 +1,5 @@
+#!/usr/bin/env fish
+
 ln -s ~/.sys-config/vim/ ~/.vim
 ln -s ~/.sys-config/vim/vimrc ~/.vimrc
 
@@ -8,5 +10,4 @@ git config --global core.excludesfile ~/.gitignore
 
 ln -s ~/.sys-config/tmux.conf ~/.tmux.conf
 
-ln -fs ~/.sys-config/.config/  ~/.config
-
+ln -fs ~/.sys-config/config/  ~/.config
