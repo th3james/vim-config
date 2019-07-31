@@ -2,3 +2,4 @@ vim/bundle/
 vim/plugged/
 .config/configstore/
 .config/omf/
+config/direnv/allow/

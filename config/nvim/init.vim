@@ -170,7 +170,8 @@ let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_args='--ignore=E128'
 
-" load project specific .vimrc files
-set exrc
-" This prevents project specific .vimrc files doing anything dangerous
-set secure
+if exists("$EXTRA_VIM")
+  for path in split($EXTRA_VIM, ':')
+    exec "source ".path
+  endfor
+endif
