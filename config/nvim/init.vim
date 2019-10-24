@@ -6,8 +6,9 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-rails'
 Plug 'scrooloose/nerdtree'
-"Plug 'kchmck/vim-coffee-script'
-Plug 'briancollins/vim-jst'
+
+Plug 'kchmck/vim-coffee-script'
+
 Plug 'ervandew/supertab'
 "Plug 'kien/ctrlp.vim'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -23,7 +24,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-rhubarb'
 Plug 'plasticboy/vim-markdown'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'vim-syntastic/syntastic'
+Plug 'dense-analysis/ale'
 Plug 'fatih/vim-go'
 Plug 'hashivim/vim-terraform'
 
@@ -142,6 +143,19 @@ let test#strategy = "vimux"
 
 "let test#python#runner = 'pytest'
 
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'json': ['eslint'],
+\   'jsx': ['eslint'],
+\   'python': ['flake8'],
+\}
+
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\   'jsx': ['prettier'],
+\   'python': ['autopep8'],
+\}
+
 " Make shortcut
 nnoremap <Leader>r :VimuxRunCommand('make')<CR>
 nnoremap <Leader>u :VimuxRunCommand('make test')<CR>
@@ -154,21 +168,8 @@ imap jk <Esc>
 
 " [buffer number] followed by filename:
 set statusline=[%n]\ %f
-" for Syntastic messages:
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 " show line#:column# on the right hand side
 set statusline+=%=%l:%c
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_python_flake8_args='--ignore=E128'
 
 if exists("$EXTRA_VIM")
   for path in split($EXTRA_VIM, ':')
