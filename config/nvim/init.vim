@@ -24,17 +24,18 @@ Plug 'tpope/vim-rhubarb'
 Plug 'plasticboy/vim-markdown'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'dense-analysis/ale'
-Plug 'fatih/vim-go'
+"Plug 'fatih/vim-go'
 Plug 'hashivim/vim-terraform'
 Plug 'leafgarland/typescript-vim'
 Plug 'chr4/nginx.vim'
-
-let g:vim_markdown_folding_disabled=1
+Plug 'ekalinin/Dockerfile.vim'
 
 " vim-scripts repos
 Plug 'vim-scripts/L9'
 
 call plug#end()
+
+let g:vim_markdown_folding_disabled=1
 
 filetype plugin indent on     " required!
 "
