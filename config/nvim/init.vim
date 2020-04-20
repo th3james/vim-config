@@ -4,16 +4,15 @@ filetype off                   " required!
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'tpope/vim-rails'
+" Plug 'tpope/vim-rails'
 Plug 'scrooloose/nerdtree'
-
-Plug 'kchmck/vim-coffee-script'
+" Plug 'kchmck/vim-coffee-script'
 
 Plug 'ervandew/supertab'
 "Plug 'kien/ctrlp.vim'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 "Plug 'thoughtbot/vim-rspec'
-Plug 'rust-lang/rust.vim'
+"Plug 'rust-lang/rust.vim'
 "Plug 'keith/swift.vim'
 Plug 'yodiaditya/vim-pydjango'
 Plug 'nvie/vim-flake8'
@@ -27,6 +26,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'dense-analysis/ale'
 Plug 'fatih/vim-go'
 Plug 'hashivim/vim-terraform'
+Plug 'leafgarland/typescript-vim'
+Plug 'chr4/nginx.vim'
 
 let g:vim_markdown_folding_disabled=1
 
