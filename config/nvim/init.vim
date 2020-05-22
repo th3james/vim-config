@@ -5,25 +5,23 @@ filetype off                   " required!
 call plug#begin('~/.vim/plugged')
 
 " Plug 'tpope/vim-rails'
-Plug 'scrooloose/nerdtree'
-" Plug 'kchmck/vim-coffee-script'
 
-Plug 'ervandew/supertab'
+"Plug 'ervandew/supertab'
 "Plug 'kien/ctrlp.vim'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 "Plug 'thoughtbot/vim-rspec'
 "Plug 'rust-lang/rust.vim'
 "Plug 'keith/swift.vim'
-Plug 'yodiaditya/vim-pydjango'
+"Plug 'yodiaditya/vim-pydjango'
 Plug 'nvie/vim-flake8'
 Plug 'janko-m/vim-test'
-Plug 'benmills/vimux'
+"Plug 'benmills/vimux'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-rhubarb'
 Plug 'plasticboy/vim-markdown'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'dense-analysis/ale'
+"Plug 'christoomey/vim-tmux-navigator'
+"Plug 'dense-analysis/ale'
 "Plug 'fatih/vim-go'
 Plug 'hashivim/vim-terraform'
 Plug 'leafgarland/typescript-vim'
@@ -31,22 +29,13 @@ Plug 'chr4/nginx.vim'
 Plug 'ekalinin/Dockerfile.vim'
 
 " vim-scripts repos
-Plug 'vim-scripts/L9'
+"Plug 'vim-scripts/L9'
 
 call plug#end()
 
 let g:vim_markdown_folding_disabled=1
 
 filetype plugin indent on     " required!
-"
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
 
 " UI stuff
 set t_Co=256
@@ -72,7 +61,6 @@ set scrolloff=3                       " minimum lines to keep above and below cu
 set foldenable                        " auto fold code
 set gdefault                          " the /g flag on :s substitutions by default
 
-"set spell                 " spell checking on
 set undofile              " Persistent undo (across files)
 
 
@@ -98,33 +86,9 @@ set ai sw=2 sts=2 et
 set numberwidth=4
 set winwidth=84
 
-"set omnifunc=csscomplete#CompleteCSS 
-
-" enable hard mode
-"autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
-
-" CtrlPTag on .
-"nnoremap <leader>. :CtrlPTag<CR>
-"nnoremap <leader>/ :!ctags -R
-
 nnoremap <C-p> :Files<CR>
 
 let g:fzf_layout = { 'down': '~40%' }
-
-
-" The Silver Searcher
-if executable('ag')
-  set grepprg=ag\ --nogroup\ --nocolor
-
-  " Old CtrlP fuzzy search setup
-  " " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  " let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-
-  " " ag is fast enough that CtrlP doesn't need to cache
-  " let g:ctrlp_use_caching = 0
-
-  " command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
-endif
 
 " vim-test setup
 nmap <silent> <leader>t :TestNearest<CR>
@@ -133,7 +97,7 @@ nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
 
-let test#strategy = "vimux"
+"let test#strategy = "vimux"
 
 " Example docker transform
 "function! DockerTransform(cmd) abort
@@ -164,9 +128,6 @@ nnoremap <Leader>u :VimuxRunCommand('make test')<CR>
 
 " jk instead of esc
 imap jk <Esc>
-
-" Toggle HardMode
-"map <Leader>e :call EasyMode()<CR>
 
 " [buffer number] followed by filename:
 set statusline=[%n]\ %f
