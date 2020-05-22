@@ -7,3 +7,4 @@ config/direnv/allow/
 config/nvim/.netrwhist
 config/fish/fish_variables
 config/fish/node_modules
+config/coc/
