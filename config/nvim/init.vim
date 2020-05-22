@@ -27,6 +27,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'chr4/nginx.vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'morhetz/gruvbox'
 
 " vim-scripts repos
 "Plug 'vim-scripts/L9'
@@ -42,6 +43,7 @@ set t_Co=256
 
 syntax on                 " Enable syntax highlighting
 color default
+colorscheme gruvbox
 set background=dark       " Assume a dark background
 
 set backspace=indent,eol,start	" backspace for dummys
