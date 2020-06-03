@@ -206,8 +206,8 @@ call coc#add_extension(
       \ "coc-tsserver",
       \ "coc-css",
       \ "coc-prettier",
-      \ "coc-tabnine",
       \ "coc-eslint",
+      \ "coc-rls",
 \)
 
 " Highlight the symbol and its references when holding the cursor.
