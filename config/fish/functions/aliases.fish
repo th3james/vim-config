@@ -1,6 +1,5 @@
 alias dc "docker-compose"
 alias dce "docker-compose exec"
-alias dcr "docker-compose exec"
 alias vi "nvim"
 alias tmux "env TERM=screen-256color tmux"
 
