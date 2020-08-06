@@ -99,10 +99,7 @@ let g:fzf_layout = { 'down': '~40%' }
 " jk instead of esc
 imap jk <Esc>
 
-" [buffer number] followed by filename:
-set statusline=[%n]\ %f
-" show line#:column# on the right hand side
-set statusline+=%=%l:%c
+set statusline=%f%<\:%l\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 if exists("$EXTRA_VIM")
   for path in split($EXTRA_VIM, ':')
@@ -248,7 +245,7 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline.
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Mappings using CoCList:
 " Show all diagnostics.
