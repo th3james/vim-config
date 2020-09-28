@@ -7,6 +7,5 @@
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.mypyEnabled": true,
-  "python.formatting.provider": "black",
-  "python.formatting.blackArgs": ["--line-length=79"]
+  "python.formatting.provider": "black"
 }
