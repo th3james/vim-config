@@ -129,6 +129,10 @@ else
   set signcolumn=yes
 endif
 
+" Custom commands
+command PBCFullPath execute "!echo %:p | pbcopy"
+command PBCRelativePath execute "!echo % | pbcopy"
+
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
