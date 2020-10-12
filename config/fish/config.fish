@@ -7,6 +7,7 @@ git config --global core.editor vim
 direnv hook fish | source
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 set -g fish_user_paths "$HOME/.cargo/bin" $fish_user_paths
+set -g fish_user_paths "$HOME/.gem/ruby/2.6.0/bin" $fish_user_paths
 
 # rbenv
 status --is-interactive; and source (rbenv init -|psub)
