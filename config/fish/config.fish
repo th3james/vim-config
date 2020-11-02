@@ -16,3 +16,7 @@ status --is-interactive; and source (rbenv init -|psub)
 set -g PYENV_ROOT $HOME/.pyenv
 set -g fish_user_paths $PYENV_ROOT/bin $fish_user_paths
 status --is-interactive; and source (pyenv init -|psub)
+
+# Use Docker Buildkit
+set -g DOCKER_BUILDKIT 1
+set -g COMPOSE_DOCKER_CLI_BUILD 1
