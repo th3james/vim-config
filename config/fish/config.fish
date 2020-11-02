@@ -2,7 +2,7 @@
 . "$HOME/.config/fish/functions/aliases.fish"
 
 set -g EDITOR "nvim"
-git config --global core.editor vim
+git config --global core.editor nvim
 
 direnv hook fish | source
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
