@@ -5,6 +5,9 @@
 *.un~
 vim/plugged
 
-# OS X
+# macOS
 .DS_Store
 .DS_Store?
+
+# Nova
+.nova/
