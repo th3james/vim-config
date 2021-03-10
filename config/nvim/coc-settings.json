@@ -1,4 +1,5 @@
 {
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "yaml"],
   "python.jediEnabled": false,
   "python.pythonPath": "~/.pyenv/versions/3.8.3/bin/python",
   "python.venvFolders": [".pyenv"],

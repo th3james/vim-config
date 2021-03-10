@@ -191,6 +191,8 @@ call coc#add_extension(
       \ "coc-eslint",
 \)
 
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
