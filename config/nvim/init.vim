@@ -189,7 +189,6 @@ call coc#add_extension(
       \ "coc-css",
       \ "coc-prettier",
       \ "coc-eslint",
-      \ "coc-rls",
 \)
 
 " Highlight the symbol and its references when holding the cursor.
