@@ -1,8 +1,8 @@
 {
   "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "yaml"],
   "python.jediEnabled": false,
-  "python.pythonPath": "~/.pyenv/versions/3.8.3/bin/python",
-  "python.venvFolders": [".pyenv"],
+  "python.pythonPath": "~/.venv/bin/python",
+  "python.venvFolders": [".venv"],
   "python.linting.enabled": true,
   "python.linting.lintOnSave": true,
   "python.linting.pylintEnabled": false,
