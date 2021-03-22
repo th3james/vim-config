@@ -185,7 +185,7 @@ endfunction
 "
 call coc#add_extension(
       \ "coc-json",
-      \ "coc-python",
+      \ "coc-pyright",
       \ "coc-tsserver",
       \ "coc-css",
       \ "coc-prettier",
