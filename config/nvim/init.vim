@@ -27,6 +27,7 @@ Plug 'chr4/nginx.vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'morhetz/gruvbox'
+Plug 'cespare/vim-toml'
 
 " vim-scripts repos
 "Plug 'vim-scripts/L9'
