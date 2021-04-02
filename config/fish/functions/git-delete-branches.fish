@@ -1,6 +1,6 @@
 # Inspired by
 # https://seb.jambor.dev/posts/improving-shell-workflows-with-fzf/
-function delete-git-branches -d 'Delete git branches by name'
+function git-delete-branches -d 'Delete git branches by name'
   argparse 'm/merged' -- $argv
   or return
 
