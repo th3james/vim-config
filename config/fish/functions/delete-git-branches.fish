@@ -8,7 +8,7 @@ function delete-git-branches -d 'Delete git branches by name' -a arg_1 arg_b
     fzf --multi --preview="git log {} --"
   )
   if string length -q -- $branches_to_delete
-    echo "git branch --d '$branches_to_delete'"
+    git branch --d "$branches_to_delete"
   else
     echo "no branches given - exiting"
   end
