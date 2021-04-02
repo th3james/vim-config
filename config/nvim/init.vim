@@ -28,6 +28,7 @@ Plug 'ekalinin/Dockerfile.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'morhetz/gruvbox'
 Plug 'cespare/vim-toml'
+Plug 'dag/vim-fish'
 
 " vim-scripts repos
 "Plug 'vim-scripts/L9'
