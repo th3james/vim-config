@@ -1,14 +1,14 @@
-alias dc "docker-compose"
-alias dce "docker-compose exec"
-alias vi "nvim"
-alias tmux "env TERM=screen-256color tmux"
+abbr -a -g dc docker compose
+abbr -a -g dce docker compose exec
+abbr -a -g vi nvim
+abbr -a -g tmux env TERM=screen-256color tmux
 
 # Git #
-alias ga 'git add'
-alias gst 'git status'
-alias gcm 'git checkout master'
-alias gco 'git checkout'
-alias gd 'git diff'
-alias gc 'git commit -v'
-alias gfm 'git fetch; git merge --ff-only'
-alias gfr 'git fetch; git rebase'
+abbr -a -g ga git add
+abbr -a -g gst git status
+abbr -a -g gcm git checkout master
+abbr -a -g gco git checkout
+abbr -a -g gd git diff
+abbr -a -g gc git commit -v
+abbr -a -g gfm 'git fetch; git merge --ff-only'
+abbr -a -g gfr 'git fetch; git rebase'
