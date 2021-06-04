@@ -1,5 +1,5 @@
-abbr -a -g dc docker compose
-abbr -a -g dce docker compose exec
+abbr -a -g dc docker-compose
+abbr -a -g dce docker-compose exec
 abbr -a -g vi nvim
 abbr -a -g tmux env TERM=screen-256color tmux
 
