@@ -12,3 +12,4 @@ abbr -a -g gd git diff
 abbr -a -g gc git commit -v
 abbr -a -g gfm 'git fetch; git merge --ff-only'
 abbr -a -g gfr 'git fetch; git rebase'
+abbr -a -g gpo 'git push origin '
